@@ -65,5 +65,7 @@ else
     echo -e "${R}${CRM} An error occurred while installing the pre-commit hook script.${D}"
 fi
 
-echo -e "${G}${CHM} Enable Gitleaks...${D}"
+echo -e "${G}${CHM} Enable Gitleaks
+Use ${W}git config hooks.gitleaks-enable true ${G}for disable 
+Or ${W}git config --unset hooks.gitleaks-enable ${G}for unset ${D}"
 git config hooks.gitleaks-enable true
