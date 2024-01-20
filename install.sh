@@ -21,11 +21,11 @@ ENABLE=$(git config --bool hooks.gitleaks-enable)
 
 if [ -f gitleaks ]; then
     echo -e "Gitleaks alredy installing. \nGitleaks version: ${W}${BOLD}${GITLEAKS_CURRENT_VERSION}${D}";
-    read -p "Do you want to continue? (y/n): " response
-    if [ "$response" != "y" ] && [ "$response" != "Y" ]; then
-        echo -e >&2 "${R}Installation aborted.${D}"
-        exit 1
-    fi
+    # read -p "Do you want to continue? (y/n): " response
+    # if [ "$response" != "y" ] && [ "$response" != "Y" ]; then
+    #     echo -e >&2 "${R}Installation aborted.${D}"
+    #     exit 1
+    # fi
  fi
 
 # Determine the operating system
