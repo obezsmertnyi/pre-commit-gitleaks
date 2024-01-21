@@ -66,6 +66,6 @@ else
 fi
 
 echo -e "${G}${CHM} Enable Gitleaks
-Use ${W}git config hooks.gitleaks-enable disable ${G}for disable 
+Use ${W}git config hooks.gitleaks-enable disable ${G}for disable
 Or ${W}git config --unset hooks.gitleaks-enable ${G}for unset ${D}"
 git config hooks.gitleaks-enable true
